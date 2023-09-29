@@ -1,0 +1,260 @@
+#weather-icon {
+  text-align: left;
+  height: fit-content;
+  margin-right: 10px;
+  padding-top: 30px;
+}
+
+#weather-icon-media {
+  display: none;
+}
+
+#temp-header {
+  padding: 15px;
+}
+
+#weather-deg {
+  font-size: 100px;
+  margin-left: 300px;
+  align-items: start;
+  margin-bottom: 100px;
+}
+
+#weather-main {
+  display: flex;
+  float: left;
+  padding-top: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 60px;
+}
+
+#weather-main hgroup {
+  padding-top: 30px;
+}
+
+#weather-main i {
+  padding-top: 60px;
+}
+
+#title {
+  padding-top: 50px;
+}
+
+#icon {
+  padding-bottom: 60px;
+}
+
+#cityInput {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  height: 3rem;
+  width: 300px;
+}
+
+#cityList div {
+  padding: 15px;
+  cursor: pointer;
+}
+
+#cityList {
+  position: fixed;
+  border: transparent;
+  max-height: 200px;
+  overflow-y: auto;
+  top: 80px;
+  z-index: 1;
+  width: 300px;
+  background-color: rgb(15, 23, 29);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+#cityList div:hover {
+  background-color: #18232c;
+}
+
+#loader {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 9999;
+}
+
+#main-card {
+  margin-bottom: 7rem !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.card-title {
+  align-items: center !important;
+  text-align: center !important;
+  padding: 1rem !important;
+  font-size: larger !important;
+  margin-bottom: 1px;
+}
+
+.card-body {
+  align-items: baseline;
+  text-align: center !important;
+  padding: 1rem !important;
+  font-size: large !important;
+  margin: 0px !important;
+}
+
+.city-list-item {
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.theme-toggle-button i {
+  font-size: 24px;
+}
+
+.city-list-item:hover {
+  background-color: rgb(16, 24, 30);
+}
+
+.theme-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(248, 248, 248);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  padding-bottom: 1rem !important;
+}
+
+nav {
+  height: 5rem;
+  padding-top: 1rem;
+  align-items: center;
+  background-color: rgb(15, 23, 29);
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+footer {
+  background-color: rgb(15, 23, 29);
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  nav {
+    height: 10rem;
+    padding-top: 2px;
+    align-items: center;
+    background-color: rgb(15, 23, 29);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: grid !important;
+  }
+
+  #title {
+    padding-top: 0;
+    height: 50px;
+  }
+
+  #icon {
+    margin-top: 10px;
+    margin-left: 28px;
+    height: 50px;
+  }
+
+  #cityInput {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: 3rem;
+    width: 238px;
+    padding-right: 40px;
+  }
+
+  #weather-deg {
+    width: 100%;
+    margin-left: 0px;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 0px;
+    margin-bottom: 15px !important;
+  }
+
+  #weather-main {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  #weather-main i {
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+
+  #weather-icon {
+    display: none;
+  }
+
+  #weather-icon-media {
+    margin-top: 10%;
+    padding-left: 5%;
+    display: block;
+    float: center;
+    width: 100%;
+  }
+
+  #temp-header {
+    height: 375px;
+  }
+
+  #cityList div {
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  #cityList {
+    position: fixed;
+    border: transparent;
+    max-height: 200px;
+    overflow-y: auto;
+    top: 145px;
+    z-index: 1;
+    width: 238px;
+    background-color: rgb(15, 23, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+  }
+}
